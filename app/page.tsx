@@ -220,40 +220,30 @@ export default function Home() {
                   description:
                     "Co-developed an open-source offensive toolkit enabling rapid, automated enumeration and analysis across AWS, Azure, and GCP. Built modular components supporting cloud mapping, misconfiguration detection, and attack-path discovery.",
                   tech: ["Go", "AWS", "Azure", "GCP", "Cloud Security"],
-                  github: "#",
-                  live: "#",
                 },
                 {
                   title: "Distributed System Security",
                   description:
                     "Developed a secure shared-store service enabling multi-user document storage and retrieval across distributed local machines with robust security controls.",
                   tech: ["Python", "Distributed Systems", "Cryptography"],
-                  github: "#",
-                  live: "#",
                 },
                 {
                   title: "Malware Analysis - Greencat",
                   description:
                     "Reverse engineered the Greencat malware, producing detailed documentation, control-flow graphs, and a custom def-use plugin for IDA Pro.",
                   tech: ["Assembly", "C", "IDA Pro", "Ghidra"],
-                  github: "#",
-                  live: "#",
                 },
                 {
                   title: "Advanced Keylogger & Backdoor",
                   description:
                     "Built a low-CPU-usage keylogger with extended capabilities and developed a Windows backdoor deployed from Kali Linux for security research purposes.",
                   tech: ["Python", "Kali Linux", "Windows Security"],
-                  github: "#",
-                  live: "#",
                 },
                 {
                   title: "Active & Passive Information Gathering",
                   description:
                     "Conducted comprehensive reconnaissance on live websites and local environments, delivering detailed reports on findings and penetration testing techniques.",
                   tech: ["Nmap", "Kali Linux", "Metasploit", "OSINT"],
-                  github: "#",
-                  live: "#",
                 },
               ].map((project, index) => (
                 <div
@@ -273,20 +263,6 @@ export default function Home() {
                         {tech}
                       </span>
                     ))}
-                  </div>
-                  <div className="flex gap-4">
-                    <a
-                      href={project.github}
-                      className="text-[#8892b0] hover:text-[#64ffda] transition-colors"
-                    >
-                      GitHub
-                    </a>
-                    <a
-                      href={project.live}
-                      className="text-[#8892b0] hover:text-[#64ffda] transition-colors"
-                    >
-                      Live Demo
-                    </a>
                   </div>
                 </div>
               ))}
